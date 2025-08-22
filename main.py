@@ -2,12 +2,9 @@ import os
 import sys
 import pathlib
 
-# sys.path[0] = str(pathlib.Path(__file__).parent.parent.resolve())
-
 from utils.config_reader import ConfigReader
 from utils.logging import setup_logger
-from utils.video_processor import VideoProcessor
-
+from src.video_processor import VideoProcessor
 
 
 def main():
@@ -15,7 +12,7 @@ def main():
     logger = setup_logger()
 
     logger.info("Program started")
-    config_path = r"configs\\config.yaml"
+    config_path = r"configs\\confi.yaml"
     if not os.path.exists(config_path):
         raise FileNotFoundError(f"Configuration file not found: {config_path}")
     config = ConfigReader.load_config(config_path)
