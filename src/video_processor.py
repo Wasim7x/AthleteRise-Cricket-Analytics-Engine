@@ -4,6 +4,7 @@ import sys
 import pathlib
 import yt_dlp
 from typing import Dict, List, Tuple 
+import numpy as np
 
 sys.path[0] = str(pathlib.Path(__file__).parent.parent.resolve())
 

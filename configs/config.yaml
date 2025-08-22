@@ -1,12 +1,12 @@
 # input vidio
 input_video: 
-  url: "https://www.youtube.com/shorts/VWGLWJ4MXQQ"
+  url: "https://www.youtube.com/shorts/vSX3IRxGnNY"
 
 # Video Processing
 video:
   target_fps: 30
-  target_width: 1280
-  target_height: 720
+  target_width: NULL  # Set to None for original width
+  target_height: NULL
   output_format: "mp4"
 
 # Pose Estimation
